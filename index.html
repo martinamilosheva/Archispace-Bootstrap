@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!------- NAVBAR-START ----------->
+    <nav
+      class="navbar navbar-dark bg-dark border-bottom border-black navbar-expand-md"
+    >
+      <div class="container-fluid px-3 py-2">
+        <a
+          class="navbar-brand text-uppercase text-secondary mb-2 mb-md-0"
+          href="./index.html"
+          >glozzom</a
+        >
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-2">
+              <a
+                class="nav-link text-white text-uppercase border-start p-2"
+                aria-current="page"
+                href="./index.html"
+                >home</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                class="nav-link text-secondary text-uppercase"
+                href="./about.html"
+                >about us</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                class="nav-link text-secondary text-uppercase"
+                href="./services.html"
+                >services</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                class="nav-link text-secondary text-uppercase"
+                href="./blog.html"
+                >blog</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                class="nav-link text-secondary text-uppercase"
+                href="./contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-------NAVBAR-END--------->
+    <!----------- CAROUSEL-START----------->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="true carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+          <img
+            src="./starter-files/Images/image1.jpg"
+            class="w-100"
+            alt="Carousel image-1"
+          />
+          <div
+            class="carousel-caption-1 position-absolute text-white text-end d-none d-md-block"
+          >
+            <h1>Heading One</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, debitis?
+            </p>
+            <button type="button" class="btn btn-danger ms-auto">
+              Sign Up Now
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="./starter-files/Images/image2.jpg"
+            class="w-100"
+            alt="Carousel image-2"
+          />
+          <div
+            class="carousel-caption-2 position-absolute text-center text-white d-none d-md-block"
+          >
+            <h1>Heading Two</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              temporibus!
+            </p>
+            <button type="button" class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="./starter-files/Images/image3.jpg"
+            class="w-100"
+            alt="Carousel image-3"
+          />
+          <div
+            class="carousel-caption-3 position-absolute text-center text-white d-none d-md-block"
+          >
+            <h1>Heading Three</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              temporibus!
+            </p>
+            <button type="button" class="btn btn-success">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span><i class="fa-solid fa-angle-left fs-2"></i></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span><i class="fa-solid fa-angle-right fs-2"></i></span>
+      </button>
+    </div>
+    <!----------- CAROUSEL-END----------->
+    <main>
+      <!----------- SECTION-CARDS-START----------->
+      <div class="container-lg py-4 width-65">
+        <div class="row">
+          <div class="col-12 col-md-4  text-center">
+            <i class="fa-solid fa-gear fs-3"></i>
+            <h2 class="h3 fw-normal">Turning gears</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
+              magni?
+            </p>
+          </div>
+          <div class="col-12 col-md-4  text-center">
+            <i class="fa-solid fa-cloud fs-3"></i>
+            <h2 class="h3 fw-normal">Sending data</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
+              magni?
+            </p>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="fa-solid fa-cart-shopping fs-3"></i>
+            <h2 class="h3 fw-normal">Making money</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
+              magni?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!----------- SECTION-CARDS-END----------->
+      <!----------- PARALLAX-START----------->
+      <div
+        class="parallax-1 d-flex flex-column align-items-center justify-content-center text-center"
+      >
+        <div class="col-12 text-white">
+          <h2 class="fs-1 fw-normal">Are you ready to get started?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+            fugit ducimus soluta ipsum velit dignissimos molestias at!
+          </p>
+        </div>
+      </div>
+      <!----------- PARALLAX-END----------->
+      <!----------- COLUMNS-SECTION-START----------->
+      <div class="container-lg width-65 py-4">
+        <div class="row">
+          <div
+            class="col-12 col-md-6 d-flex flex-column justify-content-center"
+          >
+            <h3 class="fw-normal">Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              deserunt nisi laborum nihil iure eos, voluptates sit esse deleniti
+              saepe veniam voluptate, vitae obcaecati possimus quae architecto
+              vero eveniet ut?Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptas deserunt nisi laborum nihil iure eos, voluptates
+              sit esse deleniti saepe veniam voluptate, vitae obcaecati possimus
+              quae architecto vero eveniet ut?
+            </p>
+            <a href="#"
+              ><button type="button" class="btn btn-outline-danger">
+                Learn more
+              </button></a
+            >
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <img
+              src="./starter-files/Images/laptop.png"
+              class="d-block w-100"
+              alt="laptop-picture"
+            />
+          </div>
+        </div>
+      </div>
+      <!----------- COLUMNS-SECTION-END----------->
+      <!----------- PARALLAX-START----------->
+      <div
+        class="parallax-2 d-flex flex-column align-items-center justify-content-center text-center"
+      >
+        <div class="col-12 text-white">
+          <!-- Play-Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-link text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#videoModal"
+          >
+            <i class="fa-solid fa-play fs-2"></i>
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="videoModal"
+            tabindex="-1"
+            aria-labelledby="videoModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="videoModalLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    width="auto"
+                    height="315"
+                    src="https://www.youtube.com/embed/niih26AUYqU?si=ExsI4E3caotqrFPX"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="fs-1 fw-normal">See what we do</h2>
+        </div>
+      </div>
+      <!----------- PARALLAX-END----------->
+      <!----------- GALLERY-SECTION-START----------->
+      <div class="container-lg py-4 width-65">
+        <div class="row g-3">
+          <h2 class="text-center fw-normal">Photo gallery</h2>
+          <p class="text-center">Check our photos.</p>
+          <div class="col-12 col-md-4">
+            <img
+              src="./starter-files/Images/1.png"
+              alt="person1"
+              class="img-thumbnail cursor-pointer"
+              alt="Click to view"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal1"
+              role="button"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="imageModal1"
+              tabindex="-1"
+              aria-labelledby="imageModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- Large Image inside the modal -->
+                    <img
+                      src="./starter-files/Images/1.png"
+                      class="img-fluid"
+                      alt="Large Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="./starter-files/Images/2.png"
+              alt=""
+              class="img-thumbnail cursor-pointer"
+              alt="Click to view"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal2"
+              role="button"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="imageModal2"
+              tabindex="-1"
+              aria-labelledby="imageModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- Large Image inside the modal -->
+                    <img
+                      src="./starter-files/Images/2.png"
+                      class="img-fluid"
+                      alt="Large Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="./starter-files/Images/3.png"
+              alt=""
+              class="img-thumbnail"
+              alt="Click to view"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal3"
+              role="button"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="imageModal3"
+              tabindex="-1"
+              aria-labelledby="imageModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- Large Image inside the modal -->
+                    <img
+                      src="./starter-files/Images/3.png"
+                      class="img-fluid"
+                      alt="Large Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="./starter-files/Images/4.png"
+              alt=""
+              class="img-thumbnail"
+              alt="Click to view"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal4"
+              role="button"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="imageModal4"
+              tabindex="-1"
+              aria-labelledby="imageModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- Large Image inside the modal -->
+                    <img
+                      src="./starter-files/Images/4.png"
+                      class="img-fluid"
+                      alt="Large Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="./starter-files/Images/5.png"
+              alt=""
+              class="img-thumbnail"
+              alt="Click to view"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal5"
+              role="button"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="imageModal5"
+              tabindex="-1"
+              aria-labelledby="imageModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- Large Image inside the modal -->
+                    <img
+                      src="./starter-files/Images/5.png"
+                      class="img-fluid"
+                      alt="Large Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="./starter-files/Images/6.png"
+              alt=""
+              class="img-thumbnail"
+              alt="Click to view"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal6"
+              role="button"
+            />
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="imageModal6"
+              tabindex="-1"
+              aria-labelledby="imageModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <!-- Large Image inside the modal -->
+                    <img
+                      src="./starter-files/Images/6.png"
+                      class="img-fluid"
+                      alt="Large Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!----------- GALLERY-SECTION-END----------->
+    <!-----------FOOTER-START----------->
+    <footer class="bg-dark">
+      <div class="container-lg py-4 width-65">
+        <div class="text-white text-center mb-4">
+        <h2 class="fw-normal">Sign Up for our newsletter</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+          dignissimos. A dolor perferendis autem culpa nostrum, explicabo
+          aliquid esse veritatis?
+        </p>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-3">
+            <div class="mb-3">
+              <input
+                type="name"
+                class="form-control"
+                id="exampleInputName"
+                aria-describedby="emailHelp"
+                placeholder="Enter Name"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter E-mail"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <button type="submit" class="btn btn-primary offset-5 offset-md-0">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black w-100 p-3 text-white text-center">
+        <p class="mb-0">Copyright 2018 &copy Glozzom</p>
+      </div>
+    </footer>
+    <!-----------FOOTER-END----------->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

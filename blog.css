@@ -1,0 +1,18 @@
+.banner {
+    background-image: url('./starter-files/Images/image1.jpg');
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.heading {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 992px) {
+  .width-65 {
+    width: 65%;
+    margin-inline: auto;
+  }
+}
