@@ -1,17 +1,44 @@
 .carousel-caption-1,
 .carousel-caption-2,
 .carousel-caption-3 {
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  top: 70%;
+  transform: translate(-50%);
+}
+
+/* Color Theme Swatches in */
+.bgcolor-light-gray {
+  background-color: #a6a6a6;
+}
+.bgcolor-gray {
+  background-color: #8c8c8c;
+}
+.bgcolor-dark-brown {
+  background-color: #402722;
+}
+.bgcolor-brown {
+  background-color: #73534c;
+}
+.bgcolor-white {
+  background-color: #f2f2f2;
+}
+
+
+.gradient-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(189deg, rgba(221,212,210,0.6054796918767507) 3%, rgba(152,126,120,0.19371498599439774) 90%);
 }
 
 .carousel img {
-  height: 100vh;
+  height: calc(100vh - 66px);
 }
 
 .parallax-1 {
-  background-image: url("./starter-files/Images/lights.jpg");
+  background-image: url("./starter-files/Images/Cover_01.jpg..webp");
   background-position: end;
   background-attachment: fixed;
   height: 30vh;
