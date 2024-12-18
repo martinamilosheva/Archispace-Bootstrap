@@ -1,11 +1,3 @@
-.carousel-caption-1,
-.carousel-caption-2,
-.carousel-caption-3 {
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%);
-}
-
 /* Color Theme Swatches in */
 .bgcolor-light-gray {
   background-color: #a6a6a6;
@@ -19,10 +11,21 @@
 .bgcolor-brown {
   background-color: #73534c;
 }
+
+.color-brown {
+  color: #73534c;
+}
 .bgcolor-white {
   background-color: #f2f2f2;
 }
 
+.carousel-caption-1,
+.carousel-caption-2,
+.carousel-caption-3 {
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%);
+}
 
 .gradient-overlay {
   top: 0;
@@ -30,11 +33,19 @@
   right: 0;
   bottom: 0;
   pointer-events: none;
-  background: linear-gradient(189deg, rgba(221,212,210,0.6054796918767507) 3%, rgba(152,126,120,0.19371498599439774) 90%);
+  background: linear-gradient(
+    189deg,
+    rgba(221, 212, 210, 0.6054796918767507) 3%,
+    rgba(152, 126, 120, 0.19371498599439774) 90%
+  );
 }
 
 .carousel img {
   height: calc(100vh - 66px);
+
+  @media screen and (max-width: 425px) {
+    height: 50vh;
+  }
 }
 
 .parallax-1 {
@@ -50,7 +61,7 @@
       rgba(110, 106, 106, 0.4822303921568627) 0%,
       rgba(36, 36, 38, 1) 100%
     ),
-    url("./starter-files/Images/media.jpg");
+    url("./starter-files/Images/cover2.webp");
   background-position: center;
   background-attachment: fixed;
   height: 30vh;

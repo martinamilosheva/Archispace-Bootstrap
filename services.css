@@ -1,7 +1,44 @@
+/* Color Theme Swatches in */
+.bgcolor-light-gray {
+  background-color: #a6a6a6;
+}
+.bgcolor-gray {
+  background-color: #8c8c8c;
+}
+.bgcolor-dark-brown {
+  background-color: #402722;
+}
+.bgcolor-brown {
+  background-color: #73534c;
+}
+
+.color-brown {
+  color: #73534c;
+}
+.bgcolor-white {
+  background-color: #f2f2f2;
+}
+
 .banner {
-  background-image: url("./starter-files/Images/image1.jpg");
+  background-image: url("./starter-files/Images/Amber_ID_7.jpg.webp");
   background-attachment: fixed;
+  background-position: bottom;
   height: 80vh;
+
+  @media screen and (max-width: 425px) {
+    height: 50vh;
+  }
+}
+
+.background {
+  background-image: linear-gradient(
+      163deg,
+      rgba(110, 106, 106, 0.4822303921568627) 0%,
+      rgba(36, 36, 38, 1) 100%
+    ),
+    url("./starter-files/Images/cover2.webp");
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .heading {

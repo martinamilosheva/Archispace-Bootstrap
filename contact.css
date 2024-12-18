@@ -1,3 +1,24 @@
+/* Color Theme Swatches in */
+.bgcolor-light-gray {
+  background-color: #a6a6a6;
+}
+.bgcolor-gray {
+  background-color: #8c8c8c;
+}
+.bgcolor-dark-brown {
+  background-color: #402722;
+}
+.bgcolor-brown {
+  background-color: #73534c;
+}
+
+.color-brown {
+  color: #73534c;
+}
+.bgcolor-white {
+  background-color: #f2f2f2;
+}
+
 .banner {
     background-image: url('./starter-files/Images/image1.jpg');
     background-attachment: fixed;
