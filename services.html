@@ -66,7 +66,9 @@
               >
             </li>
             <li class="nav-item ms-2">
-              <a class="nav-link text-white text-uppercase" href="./magazine.html"
+              <a
+                class="nav-link text-white text-uppercase"
+                href="./magazine.html"
                 >magazine</a
               >
             </li>
@@ -94,7 +96,7 @@
       </div>
     </section>
     <!-------BANNER-END----------->
-    <!--------LIST-GROUP-START----->
+    <!--------CARDS-START----->
     <div
       id="carouselExampleSlidesOnly"
       class="carousel slide"
@@ -104,24 +106,58 @@
         <div class="carousel-item active bgcolor-brown p-5">
           <div class="card mb-3 border-0">
             <div class="row g-0">
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <img
                   src="./starter-files/Images/SPR_1979.jpg.webp"
-                  class="img-fluid rounded-start"
+                  class="img-fluid w-100 h-100"
                   alt="interior design"
                 />
               </div>
-              <div class="col-md-8">
+              <div class="col-12 col-md-8">
                 <div class="card-body bg-transparent">
-                  <h4 class="card-title">- INTERIOR DESIGN</h4>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <h4 class="card-title opacity-75 fst-italic">
+                    <i class="fa-solid fa-minus"></i> INTERIOR
+                  </h4>
+                  <h4 class="ms-4 opacity-75 fst-italic">DESIGN</h4>
+                  <p class="card-text ms-4 mt-4 w-75 mb-0">
+                    Interior design is the art and science of enhancing the
+                    interiors of a space to create a more aesthetically pleasing
+                    and functional environment. It involves a thoughtful
+                    approach to the arrangement of furniture, color schemes,
+                    lighting, and textures, ensuring every element works
+                    together harmoniously...
                   </p>
-                  <button type="button" class="btn btn-outline-dark">
-                    Learn More
+
+                  <p id="moreText" class="ms-4 d-none w-75">
+                    Interior designers focus on understanding their clients’
+                    needs and personal tastes, transforming spaces into areas
+                    that reflect their style while maximizing comfort and
+                    practicality. Whether it's a home, office, or commercial
+                    space, interior design is about creating environments that
+                    not only look beautiul...
+                  </p>
+                  <button
+                    id="readMoreBtn"
+                    class="btn btn-outline-dark ms-4 mt-4"
+                  >
+                    Read More
                   </button>
+                  <script>
+                    document.getElementById("readMoreBtn").onclick =
+                      function () {
+                        var moreText = document.getElementById("moreText");
+                        var btn = document.getElementById("readMoreBtn");
+
+                        // Toggle between showing and hiding the extra text
+                        if (moreText.classList.contains("d-none")) {
+                          moreText.classList.remove("d-none");
+                          btn.innerHTML = "Read Less"; // Change button text
+                        } else {
+                          moreText.classList.add("d-none");
+                          btn.innerHTML = "Read More"; // Change button text back
+                        }
+                      };
+                  </script>
                 </div>
               </div>
             </div>
@@ -133,47 +169,107 @@
               <div class="col-md-4">
                 <img
                   src="./starter-files/Images/furniture.webp"
-                  class="img-fluid rounded-start"
+                  class="img-fluid w-100 h-100"
                   alt="furniture"
                 />
               </div>
               <div class="col-md-8">
                 <div class="card-body bg-transparent">
-                  <h4 class="card-title"> - CUSTOM FURNITURE</h4>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <h4 class="card-title opacity-75 fst-italic">
+                    <i class="fa-solid fa-minus"></i> CUSTOM
+                  </h4>
+                  <h4 class="ms-4 opacity-75 fst-italic">FURNITURE</h4>
+                  <p class="card-text ms-4 mt-4 w-75 mb-0">
+                    Custom furniture is a key element in creating a unique and
+                    personalized space. Tailored to fit your specific style,
+                    needs, and the dimensions of your space, custom pieces offer
+                    the opportunity to add both functionality and character to
+                    any room...
                   </p>
-                  <button type="button" class="btn btn-outline-dark">
-                    Learn More
+                  <p id="moreText2" class="ms-4 d-none w-75">
+                    From handcrafted sofas and dining tables to bespoke storage
+                    solutions, custom furniture allows you to choose the
+                    materials, colors, and designs that perfectly align with
+                    your vision.
+                  </p>
+                  <button
+                    id="readMoreBtn2"
+                    class="btn btn-outline-dark ms-4 mt-4"
+                  >
+                    Read More
                   </button>
+                  <script>
+                    document.getElementById("readMoreBtn2").onclick =
+                      function () {
+                        var moreText = document.getElementById("moreText2");
+                        var btn = document.getElementById("readMoreBtn2");
+
+                        // Toggle between showing and hiding the extra text
+                        if (moreText2.classList.contains("d-none")) {
+                          moreText2.classList.remove("d-none");
+                          btn.innerHTML = "Read Less"; // Change button text
+                        } else {
+                          moreText2.classList.add("d-none");
+                          btn.innerHTML = "Read More"; // Change button text back
+                        }
+                      };
+                  </script>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item bgcolor-brown p-5">
-          <div class="card mb-3 border-0 ">
+          <div class="card mb-3 border-0">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
                   src="./starter-files/Images/estate.webp"
-                  class="img-fluid rounded-start"
+                  class="img-fluid w-100 h-100"
                   alt="real estate"
                 />
               </div>
               <div class="col-md-8">
                 <div class="card-body bg-transparent">
-                  <h4 class="card-title">- REAL EASTATE PROJECT DESIGN</h4>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                  <h4 class="card-title opacity-75 fst-italic">
+                    <i class="fa-solid fa-minus pe-1"></i>REAL EASTATE
+                  </h4>
+                  <h4 class="opacity-75 ms-4 fst-italic">PROJECT DESIGN</h4>
+                  <p class="card-text ms-4 mt-4 w-75 mb-0">
+                    Real estate project design is a comprehensive process that
+                    blends architectural vision with functional design to create
+                    properties that are both marketable and livable. Whether for
+                    residential, commercial, or mixed-use developments, our
+                    approach focuses on maximizing space and creating
+                    environments that appeal to potential buyers or tenants...
                   </p>
-                  <button type="button" class="btn btn-outline-dark">
-                    Learn More
+                  <p id="moreText3" class="d-none ms-4 w-75">
+                    We work closely with developers to ensure that the design
+                    complements the surrounding environment, meets budget and
+                    regulatory requirements, and incorporates modern trends.
+                  </p>
+                  <button
+                    id="readMoreBtn3"
+                    class="btn btn-outline-dark ms-4 mt-4"
+                  >
+                    Read More
                   </button>
+                  <script>
+                    document.getElementById("readMoreBtn3").onclick =
+                      function () {
+                        var moreText = document.getElementById("moreText3");
+                        var btn = document.getElementById("readMoreBtn3");
+
+                        // Toggle between showing and hiding the extra text
+                        if (moreText3.classList.contains("d-none")) {
+                          moreText3.classList.remove("d-none");
+                          btn.innerHTML = "Read Less"; // Change button text
+                        } else {
+                          moreText3.classList.add("d-none");
+                          btn.innerHTML = "Read More"; // Change button text back
+                        }
+                      };
+                  </script>
                 </div>
               </div>
             </div>
@@ -182,7 +278,7 @@
       </div>
     </div>
 
-    <!--------LIST-GROUP-END----->
+    <!--------CARDS-END----->
     <!--------COLLAPSE-SECTION-START----->
     <section class="background">
       <div class="container-lg width-75 py-4">
@@ -193,23 +289,26 @@
           <div class="col-12 col-md-4 offset-md-2 col-lg-6 offset-lg-0">
             <div class="d-flex flex-column mb-3">
               <a
-                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2"
+                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2 fst-italic"
                 data-bs-toggle="collapse"
                 href="#multiCollapseExample1"
                 role="button"
                 aria-expanded="false"
                 aria-controls="multiCollapseExample1"
-                >Question One?</a
+                >What types of interior design services do you offer?</a
               >
               <div
                 class="collapse multi-collapse mt-0"
                 id="multiCollapseExample1"
               >
                 <div class="bgcolor-dark-brown text-white rounded-bottom-2 p-2">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem dignissimos fugit quam, quod error voluptate? Eaque
-                    eveniet ut itaque culpa.
+                  <p class="ps-3">
+                    We offer a wide range of interior design services, including
+                    space planning, custom furniture design, full residential
+                    and commercial renovations, color consultations, furniture
+                    and decor selection, and project management. Our team works
+                    on both large and small-scale projects, ensuring every
+                    detail meets your vision and requirements.
                   </p>
                 </div>
               </div>
@@ -217,23 +316,26 @@
 
             <div class="d-flex flex-column mb-3">
               <a
-                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2"
+                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2 fst-italic"
                 data-bs-toggle="collapse"
                 href="#multiCollapseExample2"
                 role="button"
                 aria-expanded="false"
                 aria-controls="multiCollapseExample2"
-                >Question Two?</a
+                >How do you approach a new interior design project?</a
               >
               <div
                 class="collapse multi-collapse mt-0"
                 id="multiCollapseExample2"
               >
                 <div class="bgcolor-dark-brown text-white rounded-bottom-2 p-2">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem dignissimos fugit quam, quod error voluptate? Eaque
-                    eveniet ut itaque culpa.
+                  <p class="ps-3">
+                    We start by understanding your needs, style preferences, and
+                    goals for the space. Our team then creates a tailored design
+                    plan that includes space planning, color schemes, and
+                    furniture selection. We collaborate with you every step of
+                    the way, providing expert advice, and ensuring the design
+                    reflects your personality while optimizing functionality.
                   </p>
                 </div>
               </div>
@@ -241,23 +343,26 @@
 
             <div class="d-flex flex-column">
               <a
-                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2"
+                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2 fst-italic"
                 data-bs-toggle="collapse"
                 href="#multiCollapseExample3"
                 role="button"
                 aria-expanded="false"
                 aria-controls="multiCollapseExample3"
-                >Question Three?</a
+                >Do you work on both residential and commercial projects?</a
               >
               <div
                 class="collapse multi-collapse mt-0"
                 id="multiCollapseExample3"
               >
                 <div class="bgcolor-dark-brown text-white rounded-bottom-2 p-2">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem dignissimos fugit quam, quod error voluptate? Eaque
-                    eveniet ut itaque culpa.
+                  <p class="ps-3">
+                    Yes, we work on both residential and commercial projects.
+                    Whether it's designing a cozy home, an upscale penthouse, or
+                    a vibrant office space, our team is equipped to handle
+                    diverse projects. Each design is customized to suit the
+                    space’s function, style, and the specific needs of the
+                    client.
                   </p>
                 </div>
               </div>
@@ -267,23 +372,27 @@
           <div class="col-12 col-md-4 col-lg-6">
             <div class="d-flex flex-column mb-3">
               <a
-                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2"
+                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2 fst-italic"
                 data-bs-toggle="collapse"
                 href="#multiCollapseExample4"
                 role="button"
                 aria-expanded="false"
                 aria-controls="multiCollapseExample4"
-                >Question Four?</a
+              >
+                Can you help with renovating or remodeling existing spaces?</a
               >
               <div
                 class="collapse multi-collapse mt-0"
                 id="multiCollapseExample4"
               >
                 <div class="bgcolor-dark-brown text-white rounded-bottom-2 p-2">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem dignissimos fugit quam, quod error voluptate? Eaque
-                    eveniet ut itaque culpa.
+                  <p class="ps-3">
+                    Absolutely! Renovations and remodeling are one of our
+                    specialties. Whether you need a full-scale renovation or a
+                    more subtle transformation, we work with you to modernize
+                    and reimagine your existing spaces. Our team ensures that
+                    all updates align with your vision while optimizing design,
+                    layout, and function.
                   </p>
                 </div>
               </div>
@@ -291,23 +400,27 @@
 
             <div class="d-flex flex-column mb-3">
               <a
-                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2"
+                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2 fst-italic"
                 data-bs-toggle="collapse"
                 href="#multiCollapseExample5"
                 role="button"
                 aria-expanded="false"
                 aria-controls="multiCollapseExample5"
-                >Question Five?</a
+              >
+                Do you offer custom furniture design?</a
               >
               <div
                 class="collapse multi-collapse mt-0"
                 id="multiCollapseExample5"
               >
                 <div class="bgcolor-dark-brown text-white rounded-bottom-2 p-2">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem dignissimos fugit quam, quod error voluptate? Eaque
-                    eveniet ut itaque culpa.
+                  <p class="ps-3">
+                    Yes, we provide custom furniture design services. Whether
+                    you need bespoke pieces that perfectly fit your space or
+                    want unique furniture that complements your overall design,
+                    we collaborate with skilled craftsmen to create
+                    high-quality, personalized furniture that enhances both form
+                    and function in your home or office.
                   </p>
                 </div>
               </div>
@@ -315,23 +428,27 @@
 
             <div class="d-flex flex-column">
               <a
-                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2"
+                class="question bgcolor-dark-brown text-white text-start text-decoration-none p-2 fst-italic"
                 data-bs-toggle="collapse"
                 href="#multiCollapseExample6"
                 role="button"
                 aria-expanded="false"
                 aria-controls="multiCollapseExample6"
-                >Question Six?</a
+                >How do you ensure the project stays within budget?</a
               >
               <div
                 class="collapse multi-collapse mt-0"
                 id="multiCollapseExample6"
               >
                 <div class="bgcolor-dark-brown text-white rounded-bottom-2 p-2">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem dignissimos fugit quam, quod error voluptate? Eaque
-                    eveniet ut itaque culpa.
+                  <p class="ps-3">
+                    We understand the importance of staying within budget. Our
+                    team works closely with you from the beginning to establish
+                    a clear budget, offering design solutions that fit within
+                    your financial constraints. We also provide transparent cost
+                    estimates for all aspects of the project and keep you
+                    informed of any changes throughout the process to ensure
+                    there are no unexpected costs.
                   </p>
                 </div>
               </div>

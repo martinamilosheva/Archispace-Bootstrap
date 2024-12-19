@@ -20,20 +20,31 @@
 }
 
 .banner {
-    background-image: url('./starter-files/Images/image1.jpg');
-    background-attachment: fixed;
-    height: 80vh;
+  background-image: url("./starter-files/Images/cover2.webp");
+  background-attachment: fixed;
+  background-position: center;
+  height: 80vh;
+
+    @media screen and (max-width: 425px) {
+    height: 50vh;
+    background-position: bottom;
+  }
 }
 
 .heading {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  height: 50%;
+  background-color: black;
+  opacity: 60%;
+
+  @media screen and (max-width: 425px) {
+    height: 30%;
+  }
 }
 
+
 @media screen and (min-width: 992px) {
-  .width-65 {
-    width: 65%;
+  .width-75 {
+    width: 75%;
     margin-inline: auto;
   }
 }

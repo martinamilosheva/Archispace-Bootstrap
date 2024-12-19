@@ -51,10 +51,6 @@
   border-radius: 5px;
 }
 
-.bg-custom {
-  background-color: #363636;
-}
-
 @media screen and (min-width: 992px) {
   .width-75 {
     width: 75%;

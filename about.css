@@ -20,28 +20,28 @@
 }
 
 .banner {
-    background-image: url(./starter-files/Images/about.webp);
-    background-attachment: fixed;
-    background-position: center;
-    height: 80vh;
+  background-image: url(./starter-files/Images/about.webp);
+  background-attachment: fixed;
+  background-position: center;
+  height: 80vh;
 
-    @media screen and (max-width: 425px) {
+  @media screen and (max-width: 425px) {
     height: 50vh;
   }
 }
 
 .heading {
-    top: 50%;  
+  top: 50%;
 }
 
 .image {
-    bottom: 50px;
-    right: 0px;
+  bottom: 130px;
+  right: 0px;
 }
 
 img {
-    width: 350px;
-    height: 350px;
+  width: 350px;
+  height: 350px;
 }
 
 @media screen and (min-width: 992px) {
