@@ -1,9 +1,8 @@
 # Archispace_Bootstrap_MartinaMilosheva
 
  
- <img src="./starter-files/Images/archispace-laptop.png" width="300" style="display:inline-block; margin-right: 10px;">
- <img src="./starter-files/Images/Archispace-menu.png" width="300" style="display:inline-block; margin-right: 10px;">
- <img src="./starter-files/Images/Archispace-mobile.png" width="300" style="display:inline-block; margin-right: 10px;">
+ <img src="./starter-files/Images/archispace-laptop.png" width="300">
+ <img src="./starter-files/Images/Archispace-menu-design.png" width="300">
 
 This website is also deployed on Netlify and you can check it [HERE](https://archispace.netlify.app/).
 
